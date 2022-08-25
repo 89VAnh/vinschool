@@ -1,0 +1,53 @@
+@import "../scss/variables";
+
+.intro-content .container {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 300;
+
+  p,
+  ul {
+    text-align: left;
+  }
+  figure {
+    margin: 0 auto;
+    figcaption {
+      font-style: italic;
+      text-align: center;
+      font-size: 1.48rem;
+      font-weight: 500;
+      background: rgba(0, 0, 0, 0.03);
+      padding: 2px;
+      color: #444;
+      font-weight: 300;
+    }
+  }
+  > * {
+    margin-bottom: 16px;
+  }
+}
+.summer-card {
+  display: flex;
+
+  .summer-img {
+    width: 66.66666667%;
+  }
+  .summer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $primary;
+    color: $white;
+    padding: 4% 6%;
+    flex: 1;
+    gap: 16px;
+  }
+
+  p {
+    font-size: 1.32rem;
+  }
+  .btn {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+  }
+}

@@ -1,0 +1,136 @@
+@import "../scss/variables";
+
+.intro-content .container {
+  font-weight: 300;
+  color: #444;
+  font-size: 1.56rem;
+
+  section {
+    ul {
+      padding-left: 18px;
+      margin-bottom: 16px;
+    }
+    ol {
+      padding-left: 40px;
+    }
+
+    li,
+    p,
+    h2 {
+      margin-bottom: 12px;
+    }
+    > ul {
+      list-style-type: disc;
+    }
+    a {
+      color: $red-bg;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .breadcrumb a {
+      color: $black;
+    }
+
+    > img {
+      margin: 8px auto;
+      display: block;
+    }
+    table tbody th,
+    table tbody td {
+      border: 1px solid #bfbfbf;
+    }
+  }
+  .uniform-title {
+    background-color: $primary;
+    color: $white;
+    padding: 10px 5px;
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+  }
+
+  .uniform-tables {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .uniform-set {
+    color: $white;
+    background-color: $primary;
+    padding: 20px 12px 35px;
+    width: 100%;
+    font-size: 1.72rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .girl-set {
+    background-color: $red-bg;
+  }
+  .boy-set {
+    background-color: $secondary;
+  }
+  .uniform-set-title {
+    font-size: 2.4rem;
+    margin-bottom: 36px;
+    color: $primary;
+  }
+  .uniform-set-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+  }
+  .uniform-set-item {
+    border-top: $white solid 1px;
+    padding: 12px 0;
+
+    strong {
+      margin-right: 4px;
+    }
+  }
+}
+
+.card-list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+
+  .card-list-item {
+    display: flex;
+    flex-direction: column;
+    height: 351px;
+  }
+
+  .card-img-top {
+    height: 208px;
+  }
+
+  .card-content {
+    flex: 1;
+    background-color: $primary;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .card-title {
+      flex: 1;
+
+      a {
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: $white;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .link-more {
+      color: $white;
+      font-size: 1.36rem;
+      display: flex;
+      align-items: center;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

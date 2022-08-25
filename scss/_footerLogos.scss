@@ -1,0 +1,16 @@
+.footer-logos {
+  background: #d2d2d2;
+  margin: 48px 0 8px;
+  height: 150px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .footer-logos-item {
+    padding: 0 30px;
+    max-width: 27%;
+    text-align: center;
+  }
+}

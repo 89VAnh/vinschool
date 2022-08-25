@@ -1,0 +1,112 @@
+.section-vincers {
+  padding: 40px 97px 0;
+  margin-bottom: 75px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(//vinschool.edu.vn/wp-content/themes/vsc/assets/img/bg/gradient.png);
+  background-color: $secondary;
+}
+.vincers-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vincers-slider-item {
+  display: flex !important;
+  font-weight: 300;
+  .vincers-img {
+    max-width: 328px;
+    img {
+      width: 100%;
+    }
+  }
+  .vincer-info {
+    max-width: 58%;
+  }
+  .hero-title {
+    font-size: 3.16rem;
+  }
+  .summary-block {
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+  }
+  .border-list {
+    font-size: 1.32rem;
+
+    ion-icon {
+      position: absolute;
+      left: 0px;
+      top: 12px;
+    }
+
+    li:first-child {
+      border-top: #ffffff solid 1px;
+    }
+
+    li {
+      padding: 10px;
+      border-bottom: #ffffff solid 1px;
+      position: relative;
+      padding-left: 25px;
+    }
+  }
+}
+
+.vincers-slider {
+  padding-top: 50px;
+
+  .slick-dots {
+    position: absolute;
+    top: -103px;
+    right: 110px;
+    left: auto;
+    width: 120px;
+    height: 24px;
+    padding-top: 22px;
+
+    li button:before {
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $white;
+      display: block;
+      opacity: 1;
+      position: absolute;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+    }
+
+    li.slick-active button:before {
+      background-color: $primary;
+    }
+  }
+  .slick-arrow:before,
+  .slick-arrow:after {
+    font-size: 5rem;
+  }
+
+  .slick-arrow {
+    ion-icon {
+      color: $white;
+      opacity: 0.8;
+      font-size: 5.6rem;
+    }
+    &.slick-disabled {
+      opacity: 0.25;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+  .slick-prev {
+    left: -88px;
+  }
+  .slick-next {
+    right: -48px;
+  }
+}

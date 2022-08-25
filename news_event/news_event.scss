@@ -1,0 +1,48 @@
+@import "../scss/variables";
+
+.block-heading .the-title {
+  font-size: 2.4rem;
+}
+.event-list {
+  .event-list-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .event-card {
+    display: flex;
+    flex-direction: column;
+    background-color: $primary;
+    color: $white;
+  }
+  .event-link {
+    img {
+      width: 100%;
+      height: 210px;
+    }
+  }
+  .event-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 15px 30px;
+    height: 100%;
+  }
+  .event-cart-title {
+    font-size: 1.52rem;
+  }
+  .card-event-bottom {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .card-date {
+    font-size: 1.36rem;
+    font-style: italic;
+  }
+  .read-more {
+    font-size: 1.28rem;
+    margin: 0;
+  }
+}

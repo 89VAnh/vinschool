@@ -1,0 +1,49 @@
+.intro-content .container {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 300;
+}
+.intro-content .container p,
+.intro-content .container ul {
+  text-align: left;
+}
+.intro-content .container figure {
+  margin: 0 auto;
+}
+.intro-content .container figure figcaption {
+  font-style: italic;
+  text-align: center;
+  font-size: 1.48rem;
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 2px;
+  color: #444;
+  font-weight: 300;
+}
+.intro-content .container > * {
+  margin-bottom: 16px;
+}
+
+.summer-card {
+  display: flex;
+}
+.summer-card .summer-img {
+  width: 66.66666667%;
+}
+.summer-card .summer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #cda666;
+  color: #fff;
+  padding: 4% 6%;
+  flex: 1;
+  gap: 16px;
+}
+.summer-card p {
+  font-size: 1.32rem;
+}
+.summer-card .btn {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}

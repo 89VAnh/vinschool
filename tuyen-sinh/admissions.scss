@@ -1,0 +1,124 @@
+@import "../scss/variables";
+.intro-content .container {
+  font-weight: 300;
+  color: #444;
+  font-size: 1.56rem;
+
+  h2 {
+    font-size: 2.6rem;
+    color: $primary;
+    margin-bottom: 16px;
+  }
+
+  section {
+    font-size: 14px;
+    ul {
+      padding-left: 18px;
+      margin-bottom: 16px;
+    }
+
+    li,
+    p {
+      margin-bottom: 12px;
+    }
+    > ul {
+      list-style-type: disc;
+
+      li > ul {
+        list-style-type: circle;
+
+        li > ul {
+          list-style-type: square;
+        }
+      }
+    }
+    a {
+      color: $red-bg;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .breadcrumb a {
+      color: $black;
+    }
+    > h4 {
+      margin-bottom: 16px;
+    }
+    > img {
+      margin: 8px auto;
+      display: block;
+    }
+    table tbody th,
+    table tbody td {
+      border: 1px solid #bfbfbf;
+    }
+  }
+}
+
+.article {
+  margin: 40px 0;
+  .article-content {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card-header {
+    background: transparent;
+    padding: 0;
+    button {
+      background: transparent;
+      cursor: pointer;
+      text-align: left;
+      width: 100%;
+      padding: 20px 50px 20px 0;
+      position: relative;
+      border-top: 1px solid #707070;
+      border-bottom: none;
+      border-left: none;
+      border-right: none;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+  #accordion {
+    margin-top: 40px;
+
+    .card-body.lever1 {
+      > div {
+        margin-bottom: 32px;
+      }
+      button {
+        color: $primary;
+        background: #f2f2f2;
+        border: none;
+        padding-left: 20px;
+        font-size: 1.6rem;
+        font-weight: 300;
+      }
+
+      .card-body {
+        background: #9e9e9e;
+        color: #fff;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  #accordion .card-header button:before {
+    content: "〱";
+    color: $primary;
+    transform: rotate(-90deg);
+    font-size: 1.875rem;
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+    transition: all 0.3s ease;
+  }
+  .content-answer {
+    padding: 20px;
+  }
+
+  .collapse:not(.show) {
+    display: none;
+  }
+}
